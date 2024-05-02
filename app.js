@@ -1,5 +1,7 @@
 const express = require("express");
 const app = express();
+const dotenv = require("dotenv");
+dotenv.config({path : "./.env"})
 const port = 7000 || process.env.PORT;
 const razorPay = require("./razorpay")
 app.use(express.json());
